@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilocita.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="Repositorio/logop.png" alt="Logo" class="logo">
+            <div class="social-icons">
+                <a href="#"><img src="Repositorio/Iconoes/whatsapp (1).png" alt="whatsapp"></a>
+                <a href="#"><img src="Repositorio/Iconoes/x.png" alt="Twitter"></a>
+                <a href="#"><img src="Repositorio/Iconoes/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Repositorio/Iconoes/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Contacto</a></li>
+    
+            </ul>
+        </nav>
+    </header>
+
+    <img src="Repositorio/carpeta7/fotodecita.png" class="cita" alt="">
+
+    <div class="contenedor">
+        <h1 class="titulo">SOLICITE UNA CITA PARA SU <br>MASCOTA</h1>
+        <form action="#" method="post">
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="fila-formulario">
+                <div class="grupo-formulario">
+                    <label for="mascota">Mascota:</label>
+                    <select id="mascota" name="mascota" required>
+                        <option value="">Seleccione</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="turno">Elija su Turno:</label>
+                    <select id="turno" name="turno" required>
+                        <option value="">Seleccione</option>
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grupo-formulario">
+                <label for="motivo">Motivo de La Visita:</label>
+                <textarea id="motivo" name="motivo" rows="4" required></textarea>
+            </div>
+            <div class="grupo-formulario centrar">
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

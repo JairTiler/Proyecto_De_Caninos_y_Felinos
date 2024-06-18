@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#99C143;
+}
+
+header {
+    background-color:white;
+    color: white;
+    padding: 20px 0; /* Espacio extra arriba y abajo del header */
+    margin-top: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+   
+    margin-bottom: 0px; /* Espacio extra debajo del contenedor del logo */
+}
+
+.logo {
+    height: 60px;
+}
+
+.social-icons {
+  
+    display: flex;
+    gap: 30px; /* Espacio entre los iconos de redes sociales */
+}
+
+.social-icons img{
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+nav {
+    background-color:#426B1F;
+    padding: 20px 20px; /* Espacio extra dentro del nav */
+    margin-top: 20px; /* Espacio entre el contenedor y el menu */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    padding: 10px 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px; /* Espacio entre el logo y las redes sociales */
+    }
+
+    .social-icons {
+        margin-bottom: 20px; /* Espacio entre las redes sociales y el menú */
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+.menu a:hover {
+    color:#01305A; /* Cambia el color del texto al pasar el mouse */
+    transform: scale(2.5); /* Aumenta el tamaño del texto al pasar el mouse */
+}
