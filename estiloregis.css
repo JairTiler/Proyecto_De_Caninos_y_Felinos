@@ -167,77 +167,124 @@ body {
 
 /*Pie de Pagina*/
 
-/*Pie De Pagina*/
-/* CSS */
 
-.pie {
+/*piE dE pagina */
+
+.pie-de-pagina {
   position: relative;
   background-color: #01305A;
-  color: white;
-  padding: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
   top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.contenedor-iconos-pie, .contenedor-iconos-sociales, .contenedor-mapa  {
-  flex: 1 1 30%;
+.seccion-pie {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+  flex: 1;
 }
 
-.contenedor-iconos-pie .icono-clic, .contenedor-iconos-sociales .imagen-red  {
-  margin: 10px 0;
+.contenedor-iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
 }
 
-.icono-clic {
+.item-icono {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
-.icono-clic img {
-  width: 24px;
-  height: 24px;
+.item-icono a:first-child {
   margin-right: 10px;
 }
 
-.imagen-red {
-  width: 24px;
-  height: 24px;
-  margin: 10px 0;
+.item-icono img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
-.contenedor-mapa iframe {
-  width: 100%;
-  height: 300px;
+.item-icono a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: white; /* Asegurar color adecuado */
 }
 
-.fila_iconos-sociales{
+.redes-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
+}
+
+.redes-pie a {
+  margin: 0 10px;
+}
+
+.redes-pie img {
+  width: 40px;
+  height: 40px;
+}
+
+.mapa-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
   position: relative;
-  top: 260px;
-  left: -140px;
- 
-  align-items: center;
+  
 }
 
-@media (max-width: 600px) {
-  .caja {
-      flex-basis: 100%;
-      margin-bottom: 20px;
-  }
+.mapa-pie iframe {
+  width: 700px; /* Ancho del mapa */
+  height: 300px; /* Alto del mapa */
+  border: 0;
+  transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+  position: relative;
+  left: 50%;
 
+  
+  
+}
 
-  .pie {
+@media (max-width: 768px) {
+  .pie-de-pagina {
       flex-direction: column;
       align-items: center;
   }
 
-  .contenedor-iconos-pie, .contenedor-iconos-sociales, .contenedor-mapa ,.fila_iconos-sociales{
-      flex-basis: 100%;
-   
+  .seccion-pie {
+      width: 100%;
+      align-items: center; /* Centrar elementos en pantallas pequeñas */
+      text-align: center; /* Alinear texto al centro en pantallas pequeñas */
+  }
+
+  .contenedor-iconos,
+  .redes-pie {
+      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+  }
+
+  .item-icono img,
+  .redes-pie img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .item-icono a {
+      font-size: 16px;
+  }
+
+  .mapa-pie iframe {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      height: 300px;
+      transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+      left: auto;
   }
 }

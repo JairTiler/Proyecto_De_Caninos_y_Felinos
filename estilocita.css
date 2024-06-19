@@ -199,3 +199,123 @@ body {
         width: 100%;
     }
 }
+
+
+/*piE dE pagina */
+
+.pie-de-pagina {
+  background-color: #01305A;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccion-pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  flex: 1;
+}
+
+.contenedor-iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
+}
+
+.item-icono {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.item-icono a:first-child {
+  margin-right: 10px;
+}
+
+.item-icono img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.item-icono a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: white; /* Asegurar color adecuado */
+}
+
+.redes-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
+}
+
+.redes-pie a {
+  margin: 0 10px;
+}
+
+.redes-pie img {
+  width: 40px;
+  height: 40px;
+}
+
+.mapa-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
+  position: relative;
+  
+}
+
+.mapa-pie iframe {
+  width: 700px; /* Ancho del mapa */
+  height: 300px; /* Alto del mapa */
+  border: 0;
+  transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+  position: relative;
+  left: 50%;
+
+  
+  
+}
+
+@media (max-width: 768px) {
+  .pie-de-pagina {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .seccion-pie {
+      width: 100%;
+      align-items: center; /* Centrar elementos en pantallas pequeñas */
+      text-align: center; /* Alinear texto al centro en pantallas pequeñas */
+  }
+
+  .contenedor-iconos,
+  .redes-pie {
+      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+  }
+
+  .item-icono img,
+  .redes-pie img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .item-icono a {
+      font-size: 16px;
+  }
+
+  .mapa-pie iframe {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      height: 300px;
+      transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+      left: auto;
+  }
+}

@@ -24,31 +24,29 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contantos.html">Contacto</a></li>
+                <li><a href="apartarcita.html">Aparta Tu Cita</a></li>
 
             </ul>
         </nav>
     </header>
-
     <div class="slider">
-        <figure>
-            <div class="slide">
-                <img src="Repositorio/Banner/slider1.png" alt="Slider 1">
-            </div>
-            <div class="slide">
-                <img src="Repositorio/Banner/slider2.jpg" alt="Slider 2">
-            </div>
-            <div class="slide">
-                <img src="Repositorio/Banner/slider3.jpg" alt="Slider 3">
-            </div>
-            <div class="slide">
-                <img src="Repositorio/Banner/slider4.png" alt="Slider 4">
-            </div>
-        </figure>
+        <div class="slides">
+            <div class="slide"><img src="Repositorio/Banner/slider1.png" alt="Imagen 1"></div>
+            <div class="slide"><img src="Repositorio/Banner/slider2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="Repositorio/Banner/slider3.jpg" alt="Imagen 3"></div>
+            <div class="slide"><img src="Repositorio/Banner/slider4.png" alt="Imagen 4"></div>
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
     </div>
+    <script src="script.js"></script>
+    
+    
     <div >
         <h1>ACERCA DE NOSOTROS</h1>
         <div class="banner-container">
@@ -88,36 +86,43 @@
             <img src="Repositorio/mano10.png" alt="Mano" class="mano">
         </a>
     </div>
-    </body>
-    <footer class="pie">
-        <div class="fila iconos-pie">
-            <div class="icono-clic">
-                <img src="Repositorio/click.png" alt="Inicio" class="imagen-icono">
-                <p>Inicio</p>
+
+      <!-- Contenido de la página -->
+    
+      <footer class="pie-de-pagina">
+        <div class="seccion-pie">
+            <div class="contenedor-iconos">
+                <div class="item-icono">
+                    <a href="inicio.html"><img src="Repositorio/click.png" alt="Imagen 1"></a>
+                    <a href="inicio.html">Inicio</a>
+                </div>
+                <div class="item-icono">
+                    <a href="#"><img src="Repositorio/click.png" alt="Imagen 2"></a>
+                    <a href="#">Servicios</a>
+                </div>
+                <div class="item-icono">
+                    <a href="#"><img src="Repositorio/click.png" alt="Imagen 3"></a>
+                    <a href="#">Nosotros</a>
+                </div>
+                <div class="item-icono">
+                    <a href="#"><img src="Repositorio/click.png" alt="Imagen 4"></a>
+                    <a href="#">Contacto</a>
+                </div>
             </div>
-            <div class="icono-clic">
-                <img src="Repositorio/click.png" alt="Sobre Nosotros" class="imagen-icono">
-                <p>Sobre Nosotros</p>
-            </div>
-            <div class="icono-clic">
-                <img src="Repositorio/click.png" alt="Contacto" class="imagen-icono">
-                <p>Contacto</p>
-            </div>
-            <div class="icono-clic">
-                <img src="Repositorio/click.png" alt="Servicios" class="imagen-icono">
-                <p>Servicios</p>
+            <div class="redes-pie">
+                <a href="#"><img src="Repositorio/Iconoes/whatsapp (1).png" alt="WhatsApp"></a>
+                <a href="#"><img src="Repositorio/Iconoes/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="Repositorio/Iconoes/x.png" alt="Twitter"></a>
+                <a href="#"><img src="Repositorio/Rectangle 32.png" alt="Instagram"></a>
             </div>
         </div>
-        <div class="fila_iconos-sociales">
-            <img src="Repositorio/Iconoes/whatsapp (1).png" alt="Facebook" class="imagen-red">
-            <img src="Repositorio/Iconoes/facebook.png" alt="Twitter" class="imagen-red">
-            <img src="Repositorio/Iconoes/x.png" alt="Instagram" class="imagen-red">
-            <img src="Repositorio/Rectangle 32.png" alt="LinkedIn" class="imagen-red">
-        </div>
-        <div class="fila contenedor-mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509366!2d144.95373631531678!3d-37.81627927975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727e8e63b69a5e!2sVictoria!5e0!3m2!1ses!2sau!4v1633969311286!5m2!1ses!2sau" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="seccion-pie">
+            <div class="mapa-pie">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.1635880722073!2d-122.08424998469202!3d37.42206597982533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e4d0987d7d%3A0x75e3fbb3e1e345d6!2sGoogleplex!5e0!3m2!1sen!2sus!4v1622866863441!5m2!1sen!2sus" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </footer>
+    </body>
     
 
 </html>

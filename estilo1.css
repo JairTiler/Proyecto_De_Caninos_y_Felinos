@@ -114,90 +114,105 @@ nav {
 }
 
 /*slidErr*/
-.slider{
+.slider {
+    position: relative;
     width: 100%;
-    height: 1000%;
+    max-width: 1340px; /* Ancho máximo del slider */
+    height: 600px; /* Altura fija */
+    margin: auto;
     overflow: hidden;
-    float: 50px;
-   
+    border: 2px solid #ddd;
+    border-radius: 10px;
 }
 
-figure{
-    position: relative;
-    left: 0;
-    width: 400%; 
-
-    animation: 20s slide infinite ease-in-out;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
 }
 
-.slide{
-    position: relative;
-    width: 25%; 
-    float: left;
-  
-   
-
-
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
-
-
-.slide img{
+.slide img {
     width: 100%;
-    height: 800px;
-    position: relative;
-    right: 40px;
-   
-    
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra el área sin deformarse */
+    border-radius: 10px;
 }
 
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
 
+.navigation button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
 
-@keyframes slide{
-    0%{
-        left:0;
+.navigation button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Media queries para hacer el slider responsive */
+@media (max-width: 1340px) {
+    .slider {
+        max-width: 100%;
+        height: auto; /* Ajusta la altura automáticamente */
     }
-    10%{
-        left:0;
-    }
-    20%{
-        left:-100%;
-    }
-    30%{
-        left:-100%;
-    }
-    40%{
-        left:-200%;
-    }
-    50%{
-        left:-200%;
-    }
-    55%{
-        left:-300%;
-    }
-    65%{
-        left:-300%;
-    }
-    66%{
-        left:-200%;
-    }
-    74%{
-        left:-200%;
-    }
-    75%{
-        left:-100%;
-    }
-    85%{
-        left:-100%;
-    }
-    90%{
-        left:0;
-    }
-    100%{
-        left:0;
+
+    .slide img {
+        height: auto;
     }
 }
 
+@media (max-width: 1000px) {
+    .slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .slide img {
+        height: auto;
+    }
+
+    .navigation button {
+        padding: 5px; /* Ajusta el tamaño de los botones de navegación */
+    }
+}
+/*h1*/
 h1{
     text-align: center;
     color: white;
@@ -206,10 +221,11 @@ h1{
 }
 
 /*banner 1 */
+/* Banner 1 */
 .banner-container {
     position: relative;
+    top: 19px;
     width: 100%;
-  
     margin: 0 auto; /* Centrar el banner horizontalmente */
 }
 
@@ -231,9 +247,7 @@ h1{
     height: auto;
 }
 
-
-
-/*Cajas*/
+/* Cajas */
 /* Contenedor principal */
 .container {
     display: flex;
@@ -242,7 +256,6 @@ h1{
     align-items: flex-start;
     padding: 20px 0;
     margin-top: -34px;
-    
 }
 
 /* Estilos de las cajas */
@@ -250,23 +263,25 @@ h1{
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-   
     min-width: 300px;
+    position: relative; /* Añadido para posición relativa */
 }
 
 .blue-box {
     position: relative;
     background-color: #01305A;
     color: white;
-    height: 665px;
-   width: 80px;
-   top: 10px;
+    height: 690px;
+    width: 80px;
+    top: 30px;
 }
 
 .green-box {
     background-color: #99C143;
+    top: 30px;
     color: white;
     height: 674px;
+    position: relative; /* Añadido para posición relativa */
 }
 
 .box h2 {
@@ -274,7 +289,7 @@ h1{
 }
 
 /* Títulos centrados */
-.t1, .t2, .titulo2 ,.titulo1{
+.t1, .t2, .titulo2, .titulo1 {
     text-align: center;
 }
 
@@ -283,70 +298,47 @@ h1{
     color: #01305A;
 }
 
-.titulo2{
+.titulo2 {
     color: #01305A;
 }
 
-/* Imagen responsiva */
-@media (max-width: 768px) {
-    .perro {
-        flex-direction: column;
-        align-items: center;
-    }}
-
+/* Imagen del perro */
 .perro {
-    width: 50%; /* La imagen del perro ocupa el 50% del ancho de la caja en dispositivos pequeños */
-    display: block;
-    margin: 0 auto; /* Centrar la imagen */
-    max-width: 100%;
+    width: 300px; /* Tamaño del perro */
     height: 300px;
-    margin-top: 40px;
-    width: 400px;
-    min-height: 90px;
+    position: absolute; /* Posicionamiento absoluto dentro de la caja verde */
+    bottom: -60px; /* Pegado al pie de la caja verde */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%);
 }
 
 /* Párrafos justificados */
-.parrafo1, .green-box p {
+.parrafo1, .parrafo2, .green-box p {
     text-align: justify;
     line-height: 1.5em;
     font-size: 1.2em;
     margin: 0;
-}
-
-/* Estilos específicos para asegurar 8 líneas de texto */
-.parrafo1 {
-   max-height: 20em; /* Ajusta según sea necesario */
+    max-height: 12em; /* Máximo de 8 líneas */
     overflow: hidden;
-    margin-top: 90px;
 }
 
-.parrafo2, .green-box p {
-    text-align: justify;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    margin: 0;
+.parrafo1 {
+    margin-top: 90px;
 }
 
 .parrafo2 {
     position: relative;
-    max-height: 20em; /* Ajusta según sea necesario */
-     overflow: hidden;
+    margin-top: 80px;
     top: 80px;
- }
-
-
-
-
-.green-box p {
-    height: 16em; /* Ajusta según sea necesario */
-    overflow: hidden;
 }
+
 
 /*vannEr2*/
 
 .banner2 {
     position: relative;
     width: 100%;
+    top: 30px;
 
     margin-top: 80px;
   
@@ -373,76 +365,121 @@ h1{
     height: auto;
 }
 /*Pie De Pagina*/
-/* CSS */
+/*piE dE pagina */
 
-.pie {
-    position: relative;
+.pie-de-pagina {
     background-color: #01305A;
-    color: white;
-    padding: 25px;
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
     flex-wrap: wrap;
-    top: -24px;
-}
-
-.contenedor-iconos-pie, .contenedor-iconos-sociales, .contenedor-mapa  {
-    flex: 1 1 30%;
+    justify-content: space-between;
+  }
+  
+  .seccion-pie {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.contenedor-iconos-pie .icono-clic, .contenedor-iconos-sociales .imagen-red  {
-    margin: 10px 0;
-}
-
-.icono-clic {
+    margin: 10px;
+    flex: 1;
+  }
+  
+  .contenedor-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .item-icono {
     display: flex;
     align-items: center;
-    margin: 10px 0;
-}
-
-.icono-clic img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.imagen-red {
-    width: 24px;
-    height: 24px;
-    margin: 10px 0;
-}
-
-.contenedor-mapa iframe {
-    width: 100%;
-    height: 300px;
-}
-
-.fila_iconos-sociales{
-    position: relative;
-    top: 260px;
-    left: -140px;
-   
-    align-items: center;
-}
-
-@media (max-width: 600px) {
-    .caja {
-        flex-basis: 100%;
-        margin-bottom: 20px;
-    }
-
+    margin: 5px 0;
+  }
   
-    .pie {
+  .item-icono a:first-child {
+    margin-right: 10px;
+  }
+  
+  .item-icono img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .item-icono a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Asegurar color adecuado */
+  }
+  
+  .redes-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .redes-pie a {
+    margin: 0 10px;
+  }
+  
+  .redes-pie img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mapa-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
+    position: relative;
+    
+  }
+  
+  .mapa-pie iframe {
+    width: 700px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+    border: 0;
+    transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+    position: relative;
+    left: 50%;
+  
+    
+    
+  }
+  
+  @media (max-width: 768px) {
+    .pie-de-pagina {
         flex-direction: column;
         align-items: center;
     }
-
-    .contenedor-iconos-pie, .contenedor-iconos-sociales, .contenedor-mapa ,.fila_iconos-sociales{
-        flex-basis: 100%;
-     
+  
+    .seccion-pie {
+        width: 100%;
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+        text-align: center; /* Alinear texto al centro en pantallas pequeñas */
     }
-}
+  
+    .contenedor-iconos,
+    .redes-pie {
+        margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+  
+    .item-icono img,
+    .redes-pie img {
+        width: 30px;
+        height: 30px;
+    }
+  
+    .item-icono a {
+        font-size: 16px;
+    }
+  
+    .mapa-pie iframe {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: 300px;
+        transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+        left: auto;
+    }
+  }

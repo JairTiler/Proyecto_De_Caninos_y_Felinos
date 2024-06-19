@@ -112,3 +112,93 @@ nav {
     color:#01305A; /* Cambia el color del texto al pasar el mouse */
     transform: scale(2.5); /* Aumenta el tamaño del texto al pasar el mouse */
 }
+
+
+/*contacto*/
+.contacto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.contacto-info,
+.formulario-contacto {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-right: 20px; /* Espacio entre las cajas */
+    max-width: 100%; /* Ancho máximo de la caja de texto */
+}
+
+.contacto-info h2,
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Espacio bajo el título del formulario */
+}
+
+.contacto-texto {
+    margin-top: 20px;
+}
+
+.contacto-direccion-telefonos {
+    margin-top: 20px;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-weight: bold;
+    color: #fff; /* Color de texto blanco */
+    background-color: #01305A; /* Fondo azul para las etiquetas */
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px; /* Espacio a la derecha de las etiquetas */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    height: 150px; /* Altura del área de texto */
+}
+
+.form-group button {
+    background-color: #fff; /* Fondo blanco */
+    color: #01305A; /* Texto azul */
+    padding: 10px 20px;
+    border: 2px solid #01305A; /* Borde azul */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contacto-container {
+        flex-direction: column;
+    }
+
+    .contacto-info,
+    .formulario-contacto {
+        width: 100%;
+        margin-right: 0; /* Reiniciar el margen derecho en dispositivos pequeños */
+    }
+}
