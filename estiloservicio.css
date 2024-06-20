@@ -123,11 +123,13 @@ nav {
 
 
 .contenedor {
+
+    left:13.5vw ;
     margin-top: 30px;
     width: 100% ;
     max-width: 1309px; /* Ajusta el ancho máximo del contenedor */
     padding: 20px;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -193,7 +195,7 @@ nav {
 }
 
 .ver-mas:hover {
-    background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
+    background-color: #01305A; /* Color de fondo cuando se pasa el ratón */
 }
 
 .circulo-flecha {
@@ -211,7 +213,7 @@ nav {
 }
 
 .circulo-flecha:hover {
-    background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
+    background-color: #99C143; /* Color de fondo cuando se pasa el ratón */
 }
 
 
@@ -237,6 +239,17 @@ nav {
 
 .descripcion-caja.active {
     max-height: 200px; /* Altura máxima para la descripción cuando está expandida */
+}
+
+
+@media(max-height:700px){
+    .contenedor{
+        flex-direction: column;
+        align-items: center;
+        left: 30vw;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 

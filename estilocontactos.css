@@ -126,21 +126,89 @@ nav {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    width: 1200px;
+    text-align:center ;
+    left: 16vw;
 }
 
 
-.contacto-info,
+.contacto-info
 .formulario-contacto {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
     background-color: #fff; /* Fondo blanco */
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    box-shadow: 0 0 5px rgba(120, 241, 7, 0.1); /* Sombra ligera */
     margin-right: 20px; /* Espacio entre las cajas */
     max-width: 100%; /* Ancho máximo de la caja de texto */
 }
 
+.dr{
+    height: 40px;
+    width: 40px;
+
+    margin-right: 21vw;
+}
+
+.texto1{
+    position: relative;
+    text-align: justify;
+     top: -20px;
+     left: 30px;
+}
+
+.direccion{
+    color: #01305A;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    right:130px;
+}
+
+.Carrera{
+    position: relative;
+    right: 130px;
+}
+
+.t{
+    color: #01305A;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -6vw;
+    left: 140px;
+}
+
+.N{
+    position: relative;
+    top: -6vw;
+    left: 138px;
+}
+.ha{
+    color:#01305A;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -5vw;
+}
+.ser{
+    position: relative;
+    top: -6vw;
+}
+
+.h2{
+    position: relative;
+    top: 60px;
+    right: 12px;
+}
+
+h2{
+    color: #01305A;
+    font-size: 30px;
+    margin-right: 10vw;
+    position: relative;
+}
 .contacto-info h2,
 .formulario-contacto h2 {
     text-align: center;
@@ -155,19 +223,17 @@ nav {
     margin-top: 20px;
 }
 
-.etiqueta {
-    display: inline-block;
-    font-weight: bold;
-    color: #fff; /* Color de texto blanco */
-    background-color: #01305A; /* Fondo azul para las etiquetas */
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 10px; /* Espacio a la derecha de las etiquetas */
-}
 
 .form-group {
     margin-bottom: 15px;
+    width: 25vw;
+    position: relative;
+    margin-left: 26px;
+}
 
+.form-group input{
+    background-color: #01305A;
+  
 }
 
 .form-group input,
@@ -177,6 +243,10 @@ nav {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
+    
+}
+::placeholder{
+    color:#fff;
 }
 
 .form-group textarea {
@@ -194,6 +264,7 @@ nav {
     cursor: pointer;
     font-size: 1em;
     width: 50%;
+   left: 30px;
 
 }
 
