@@ -116,154 +116,114 @@ nav {
 /*nosotros*/
 
 .contenedor {
-  position: relative;
-  top: 30px;
-  display: flex; 
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.imagen-contenedor {
-  flex: 0 0 400px;
-  width: 400px;
-  height: 500px;
-}
-
-.imagen {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Mantiene la imagen intacta */
-}
-
-.texto-contenedor {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-height: 400px;
-}
-
-.titulo {
-  font-size: 2em;
-  margin: 0 0 10px;
-  text-align: center;
-  color: #01305A;
-  font-weight: bold;
-}
-
-.subtitulo {
-  font-size: 1.5em;
-  margin: 0;
-  text-align: center;
-}
-
-.texto {
-  font-size: 1em;
-  line-height: 1.5;
-  overflow: hidden;
-  text-align: justify;
-  max-width: 400px;
-  font-size: 20px;
-  position: relative;
-  margin-left: 250px;
-
-  justify-content: center;
+  background-color: #ffffff; /* Fondo blanco */
  
-}
-
-@media (max-width: 800px) {
-  .contenedor {
-      flex-direction: column;
-      align-items: center; /* Centra el contenido en pantallas pequeñas */
-  }
-
-  .imagen-contenedor {
-      width: 100%;
-      height: auto;
-  }
-
-  .imagen {
-      width: 100%;
-      height: auto;
-      object-fit: contain; /* Mantiene la imagen intacta */
-  }
-
-  .texto-contenedor {
-      max-height: none;
-      padding: 20px;
-  }
-
-  .texto {
-    position: relative;
-      max-height: none;
-      right: 120px;
-  }
-}
-
-/* mision y vision */
-
-
-/* Estilos generales */
-/* Estilos generales */
-.caja {
-  display: flex;
-  background-color: #fff;
-  border: 2px solid #0f0;
-  border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+  border-radius: 12px; /* Borde redondeado */
   padding: 20px;
-  box-sizing: border-box;
+  margin-top: 20px;
+  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+  overflow: hidden; /* Evita que el contenido sobresalga */
+}
+
+.doctora {
+  background-color: #ffffff; /* Fondo blanco */
+
+ 
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño */
+}
+
+.doctora img {
+  width: 200px; /* Ancho de la imagen de la doctora */
+  border-radius: 50%; /* Borde redondeado */
+  margin-right: 20px; /* Margen derecho */
 }
 
 .texto {
-  flex: 1;
+  flex: 1; /* Ocupa el espacio restante */
+  text-align: justify; /* Justifica el texto */
+}
+
+.texto h1,
+.texto h2,
+.texto p {
+  margin: 0; /* Elimina el margen predeterminado */
+  text-align: center;
+  
+}
+
+.mision-vision {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Cambia a disposición vertical */
+  align-items: center; /* Centra los elementos */
 }
 
 .contenido {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente el contenido */
+  background-color: #ffffff; /* Fondo blanco */
+  border: 20px solid #99C143; /* Borde verde */
+  border-radius: 12px; /* Borde redondeado */
+  padding: 20px;
+  margin-top: 20px;
+  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
+  text-align: justify; /* Justifica el texto */
 }
 
-.imagenes {
-  flex: 0 0 50%; /* Ajusta el tamaño del contenedor de imágenes */
-  position: relative;
+.contenido > div {
+  flex: 1; /* Ocupa el espacio disponible */
 }
 
-.imagenes .img1 {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
+.contenido h2 {
+  margin-bottom: 10px; /* Espacio inferior para los títulos */
+color: #01305A;
+text-align: center;
 }
 
-.imagenes .img2 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 50%;
-  height: auto;
-  transform: translate(50%, 50%);
+.contenido p {
+  margin: 0; /* Elimina el margen predeterminado */
+  line-height: 1.6; /* Altura de línea */
+  text-align: justify; /* Justifica el texto */
+  text-align: center;
 }
 
-/* Ajustes para dispositivos pequeños */
-@media only screen and (max-width: 768px) {
-  .caja {
-    flex-direction: column;
+.contenido img {
+  max-width: 100%; /* Ancho máximo de la imagen */
+  margin-left: 20px; /* Margen izquierdo */
+}
+
+.img1 {
+  max-width: 100%; /* Ancho máximo de la imagen de Misión */
+  margin-top: 20px; /* Espacio superior entre Misión y Visión */
+}
+
+.img2 {
+
+  height: 400px;
+  width: 400px; /* Ancho de la imagen de Visión */
+  margin-top: 20px; /* Espacio superior entre Misión y Visión */
+  align-self: flex-end; /* Alineación a la derecha */
+  left: 20px;
+}
+
+@media (max-width: 768px) {
+  .doctora {
+      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
   }
 
-  .imagenes {
-    width: 100%;
-    text-align: center;
+  .doctora img {
+      margin: auto; /* Centra la imagen en pantallas pequeñas */
   }
 
-  .imagenes .img2 {
-    position: static;
-    transform: none;
-    margin-top: 20px;
-    max-width: 100%;
+  .mision-vision {
+      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+  }
+
+  .contenido img {
+      margin-top: 20px; /* Espacio superior adicional entre imágenes en pantallas pequeñas */
+      margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
   }
 }

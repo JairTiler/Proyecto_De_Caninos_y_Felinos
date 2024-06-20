@@ -112,3 +112,250 @@ nav {
     color:#01305A; /* Cambia el color del texto al pasar el mouse */
     transform: scale(2.5); /* Aumenta el tamaño del texto al pasar el mouse */
 }
+
+
+.servicio{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.contenedor {
+    margin-top: 30px;
+    width: 100% ;
+    max-width: 1309px; /* Ajusta el ancho máximo del contenedor */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Permite que las filas se ajusten automáticamente */
+    position: relative;
+   
+}
+
+.fila {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    margin-bottom: 20px;
+}
+
+.columna {
+    width: 45%; /* Ancho de las columnas ajustado */
+    margin-bottom: 20px;
+}
+
+.servicio {
+  
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.servicio img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.titulo-servicio {
+    color: #01305A; /* Color de texto azul turquesa para el título */
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.ver-mas-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color:#01305A ; /* Fondo azul para el contenedor de Ver más */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ver-mas {
+    background-color:#01305A  ; /* Fondo azul para el botón Ver más */
+    color: white; /* Color de texto blanco para el botón Ver más */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas:hover {
+    background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
+}
+
+.circulo-flecha {
+    width: 30px;
+    height: 30px;
+    background-color: #F4DE12; /* Fondo azul para el círculo */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #01305A ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.circulo-flecha:hover {
+    background-color: #0056b3; /* Color de fondo cuando se pasa el ratón */
+}
+
+
+
+.descripcion-caja {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.descripcion-servicio {
+    font-size: 0.9em;
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.descripcion-caja.active {
+    max-height: 200px; /* Altura máxima para la descripción cuando está expandida */
+}
+
+
+/*piE dE pagina */
+
+.pie-de-pagina {
+    background-color: #01305A;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .seccion-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex: 1;
+  }
+  
+  .contenedor-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .item-icono {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .item-icono a:first-child {
+    margin-right: 10px;
+  }
+  
+  .item-icono img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .item-icono a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Asegurar color adecuado */
+  }
+  
+  .redes-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .redes-pie a {
+    margin: 0 10px;
+  }
+  
+  .redes-pie img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mapa-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
+    position: relative;
+    
+  }
+  
+  .mapa-pie iframe {
+    width: 700px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+    border: 0;
+    transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+    position: relative;
+    left: 50%;
+  
+    
+    
+  }
+  
+  @media (max-width: 768px) {
+    .pie-de-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .seccion-pie {
+        width: 100%;
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+        text-align: center; /* Alinear texto al centro en pantallas pequeñas */
+    }
+  
+    .contenedor-iconos,
+    .redes-pie {
+        margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+  
+    .item-icono img,
+    .redes-pie img {
+        width: 30px;
+        height: 30px;
+    }
+  
+    .item-icono a {
+        font-size: 16px;
+    }
+  
+    .mapa-pie iframe {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: 300px;
+        transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+        left: auto;
+    }
+  }
