@@ -113,7 +113,7 @@ nav {
     transform: scale(2.5); /* Aumenta el tamaño del texto al pasar el mouse */
 }
 
-
+/*//////////////////////////////////////////////////////////////////////////////////*/
 /*contacto*/
 .contacto-container {
     position: relative;
@@ -142,20 +142,21 @@ nav {
     box-shadow: 0 0 5px rgba(120, 241, 7, 0.1); /* Sombra ligera */
     margin-right: 20px; /* Espacio entre las cajas */
     max-width: 100%; /* Ancho máximo de la caja de texto */
+ 
 }
 
 .dr{
     height: 40px;
     width: 40px;
-
-    margin-right: 21vw;
+    margin-right: 14vw;
 }
 
 .texto1{
     position: relative;
     text-align: justify;
      top: -20px;
-     left: 30px;
+     left: 20px;
+     font-family: Arial, Helvetica, sans-serif;
 }
 
 .direccion{
@@ -200,7 +201,21 @@ nav {
 .h2{
     position: relative;
     top: 60px;
-    right: 12px;
+    right: -50px;
+}
+
+.formulario-contacto{
+    position: relative;
+    right: 5vw;
+   
+}
+
+.contacto-telefonos{
+margin-left: 4vw;
+}
+
+.contacto-direccion{
+    margin-left: 4vw;
 }
 
 h2{
@@ -217,6 +232,9 @@ h2{
 
 .contacto-texto {
     margin-top: 20px;
+    text-align: justify;
+    position: relative;
+    right: 30px;
 }
 
 .contacto-direccion-telefonos {
@@ -272,6 +290,12 @@ h2{
 @media (max-width: 768px) {
     .contacto-container {
         flex-direction: column;
+        margin: 10px auto;
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        right: 50px;
+     
     }
 
     .contacto-info,
@@ -279,4 +303,153 @@ h2{
         width: 100%;
         margin-right: 0; /* Reiniciar el margen derecho en dispositivos pequeños */
     }
+
+    .form-group{
+        width: 100%;
+        padding: 0px;
+       
+    }
+
+    .dr{
+    margin-left:8vw;
+    }
+
+    H2{
+        margin-left: 14vw;
+    }
+    .contacto-telefonos{
+        margin-top: -11vw;
+    }
+
+    .texto1{
+    margin-left: 20vw;
+    }
+
+    .C2{
+        margin-left: 40vw;
+    }
 }
+
+
+
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+/*piE dE pagina */
+
+.pie-de-pagina {
+    background-color: #01305A;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  
+  .seccion-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    flex: 1;
+  }
+  
+  .contenedor-iconos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .item-icono {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .item-icono a:first-child {
+    margin-right: 10px;
+  }
+  
+  .item-icono img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  
+  .item-icono a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: white; /* Asegurar color adecuado */
+  }
+  
+  .redes-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: -70px; /* Ajuste de margen a la izquierda */
+  }
+  
+  .redes-pie a {
+    margin: 0 10px;
+  }
+  
+  .redes-pie img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mapa-pie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
+    position: relative;
+    
+  }
+  
+  .mapa-pie iframe {
+    width: 700px; /* Ancho del mapa */
+    height: 300px; /* Alto del mapa */
+    border: 0;
+    transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+    position: relative;
+    left: 50%;
+  
+    
+    
+  }
+  
+  @media (max-width: 768px) {
+    .pie-de-pagina {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .seccion-pie {
+        width: 100%;
+        align-items: center; /* Centrar elementos en pantallas pequeñas */
+        text-align: center; /* Alinear texto al centro en pantallas pequeñas */
+    }
+  
+    .contenedor-iconos,
+    .redes-pie {
+        margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+  
+    .item-icono img,
+    .redes-pie img {
+        width: 30px;
+        height: 30px;
+    }
+  
+    .item-icono a {
+        font-size: 16px;
+    }
+  
+    .mapa-pie iframe {
+        width: 100%; /* Ancho completo en pantallas pequeñas */
+        height: 300px;
+        transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+        left: auto;
+    }
+  }

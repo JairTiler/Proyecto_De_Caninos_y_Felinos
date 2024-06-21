@@ -187,6 +187,8 @@ h1{
     }
 }
 
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
 /*banner 1 */
 /* Banner 1 */
 .banner-container {
@@ -213,6 +215,8 @@ h1{
     width: 45%; /* Ajusta el tamaño de la imagen de la mano según sea necesario */
     height: auto;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
 
 /* Cajas */
 /* Contenedor principal */
@@ -299,7 +303,7 @@ h1{
     top: 80px;
 }
 
-
+/*//////////////////////////////////////////////////////////////////////////////////*/
 /*vannEr2*/
 
 .banner2 {
@@ -331,6 +335,8 @@ h1{
     width: 45%; /* Ajusta el tamaño de la imagen de la mano según sea necesario */
     height: auto;
 }
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
 /*piE dE pagina */
 
 .pie-de-pagina {
