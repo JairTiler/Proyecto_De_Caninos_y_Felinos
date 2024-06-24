@@ -118,140 +118,116 @@ nav {
 .contacto-container {
     position: relative;
     display: flex;
-    top: 30px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #fff; /* Fondo blanco */
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    width: 1200px;
-    text-align:center ;
-    left: 16vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto; /* Centrado horizontal y espacio arriba y abajo */
 }
 
+.contacto-direccion{
 
-.contacto-info
-.formulario-contacto {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff; /* Fondo blanco */
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(120, 241, 7, 0.1); /* Sombra ligera */
-    margin-right: 20px; /* Espacio entre las cajas */
-    max-width: 100%; /* Ancho máximo de la caja de texto */
- 
-}
+position: relative;
+left: 3vw;
 
-.dr{
-    height: 40px;
-    width: 40px;
-    margin-right: 14vw;
-}
+top: 36px;
 
-.texto1{
-    position: relative;
-    text-align: justify;
-     top: -20px;
-     left: 20px;
-     font-family: Arial, Helvetica, sans-serif;
-}
-
-.direccion{
-    color: #01305A;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    right:130px;
 }
 
 .Carrera{
     position: relative;
-    right: 130px;
-}
-
-.t{
-    color: #01305A;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    top: -6vw;
-    left: 140px;
+    right: 30px;
 }
 
 .N{
     position: relative;
-    top: -6vw;
-    left: 138px;
+    left: 8px;
 }
-.ha{
-    color:#01305A;
-    font-size: 20px;
-    font-weight: bold;
+
+.contacto-horario{
     position: relative;
-    top: -5vw;
+    left: -1vw;
+    top: -0vw;
+    display: inline-block; 
 }
 .ser{
     position: relative;
-    top: -6vw;
+    left: 3vw;
 }
-
-.h2{
+.contacto-telefonos {
     position: relative;
-    top: 60px;
-    right: -50px;
+    left: 20vw;
+    top: -8vw;
+    padding: 10px; /* Ajusta el espacio interno */
+    /* Reducido el grosor del borde */
+    display: inline-block; /* Para que el contenedor se ajuste al contenido */
+}
+.contacto-info,
+.formulario-contacto {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(120, 241, 7, 0.1);
+    margin-right: 20px; /* Espacio entre las cajas */
+    max-width: calc(50% - 10px); /* Ajuste el ancho máximo para dos columnas */
 }
 
-.formulario-contacto{
+
+
+.dr {
+    height: 40px;
+    width: 40px;
+    margin-right: 50px; /* Espacio a la derecha de la imagen */
+    margin-top: 20px; /* Espacio arriba de la imagen */
+}
+
+.texto1 {
+    text-align: justify;
+    margin-top: 20px; /* Espacio arriba del párrafo */
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    right: 5vw;
-   
+    left: -60px;
+    
 }
 
-.contacto-telefonos{
-margin-left: 4vw;
+.direccion,
+
+.t,
+
+.ha{
+    color: #01305A;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px; /* Espacio arriba del texto */
 }
 
-.contacto-direccion{
-    margin-left: 4vw;
-}
-
-h2{
+.h2 {
     color: #01305A;
     font-size: 30px;
-    margin-right: 10vw;
+    margin-bottom: 20px; /* Espacio abajo del título */
+    margin-top: 40px;
     position: relative;
-}
-.contacto-info h2,
-.formulario-contacto h2 {
-    text-align: center;
-    margin-bottom: 20px; /* Espacio bajo el título del formulario */
+    left: 40px;
+    top: 80px;
 }
 
-.contacto-texto {
-    margin-top: 20px;
-    text-align: justify;
-    position: relative;
-    right: 30px;
+.formulario-contacto {
+    margin-top: 20px; /* Espacio arriba del formulario */
 }
-
-.contacto-direccion-telefonos {
-    margin-top: 20px;
-}
-
 
 .form-group {
     margin-bottom: 15px;
-    width: 25vw;
-    position: relative;
-    margin-left: 26px;
 }
 
-.form-group input{
-    background-color: #01305A;
-  
+.boton{
+    position: relative;
+    left: 1vw;
 }
 
 .form-group input,
@@ -261,10 +237,8 @@ h2{
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1em;
-    
-}
-::placeholder{
-    color:#fff;
+    background-color: #01305A; /* Fondo azul */
+    color: #fff; /* Texto blanco */
 }
 
 .form-group textarea {
@@ -272,64 +246,68 @@ h2{
 }
 
 .form-group button {
-   position: relative;
-
-    background-color: #99C143; 
-    color: #01305A; /* Texto azul */
+    background-color: #99C143;
+    color: #01305A;
     padding: 10px 20px;
-    border: 2px solid #01305A; /* Borde azul */
+    border: 2px solid #01305A;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    width: 50%;
-   left: 30px;
-
+    width: 100%; /* Ajuste el botón para ocupar todo el ancho */
 }
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .contacto-container {
         flex-direction: column;
-        margin: 10px auto;
-        width: 100%;
-        max-width: 100%;
-        position: relative;
-        right: 50px;
-     
+        align-items: center; /* Asegura que los elementos estén centrados */
     }
 
     .contacto-info,
     .formulario-contacto {
-        width: 100%;
-        margin-right: 0; /* Reiniciar el margen derecho en dispositivos pequeños */
+        max-width: 100%; /* Ajuste el ancho máximo para ocupar toda la pantalla */
+        margin-right: 0; /* Reinicia el margen derecho */
+        margin-bottom: 20px; /* Espacio entre las secciones */
     }
 
-    .form-group{
-        width: 100%;
-        padding: 0px;
-       
+    .dr {
+        margin-right: 0; /* Ajuste el margen derecho de la imagen */
+        margin-top: 20px; /* Ajuste el margen superior de la imagen */
     }
 
-    .dr{
-    margin-left:8vw;
+    .texto1 {
+        margin-top: 0; /* Reinicia el margen superior del párrafo */
+        right: 120px;
+        position: relative;
     }
 
-    H2{
-        margin-left: 14vw;
-    }
     .contacto-telefonos{
-        margin-top: -11vw;
+        position: relative;
+        left: 60vw;
+        top: -21vw;
     }
 
-    .texto1{
-    margin-left: 20vw;
+    .contacto-direccion{
+        position: relative;
+        top: 6vw;
+        left: 7vw;
+    
     }
 
-    .C2{
-        margin-left: 40vw;
+    .direccion,
+    .Carrera,
+    .t,
+    .N,
+    .ha,
+    .ser {
+        margin-top: 10px; /* Ajuste el margen superior de los textos */
+    }
+
+    .boton{
+        position: relative;
+        left: 2vw;
     }
 }
-
 
 
 

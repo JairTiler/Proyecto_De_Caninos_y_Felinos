@@ -1,7 +1,12 @@
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color:#99C143;
+
+ 
+ 
+
 }
 
 header {
@@ -31,6 +36,7 @@ header {
 }
 
 .social-icons img{
+
   width: 40px;
   height: 40px;
 }
@@ -114,116 +120,482 @@ nav {
 }
 
 /*nosotros*/
+/* Contenedor principal con flexbox */
 
-.contenedor {
-  background-color: #ffffff; /* Fondo blanco */
-
-  border-radius: 12px; /* Borde redondeado */
+.contenedor1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 1200px;
+  max-width: 100%;
+  margin: 30px auto;
   padding: 20px;
-  margin-top: 20px;
-  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-  overflow: hidden; /* Evita que el contenido sobresalga */
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  top: 30px;
+  left: 0vw;
 }
 
+/* Imagen de la doctora */
 .doctora {
-  background-color: #ffffff; /* Fondo blanco */
-
- 
-  padding: 20px;
-  margin-bottom: 20px;
-  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten al tamaño */
+  width: 500px;
+  height: auto;
+  margin-right: 30px;
 }
 
-.doctora img {
-  width: 200px; /* Ancho de la imagen de la doctora */
-  border-radius: 50%; /* Borde redondeado */
-  margin-right: 20px; /* Margen derecho */
-}
-
+/* Contenedor de texto */
 .texto {
-  flex: 1; /* Ocupa el espacio restante */
-  text-align: justify; /* Justifica el texto */
-}
-
-.texto h1,
-.texto h2,
-.texto p {
-  margin: 0; /* Elimina el margen predeterminado */
-  text-align: center;
-  
-}
-
-.mision-vision {
   display: flex;
-  flex-direction: column; /* Cambia a disposición vertical */
-  align-items: center; /* Centra los elementos */
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
+  width: calc(100% - 530px); /* Ajusta el ancho para tener en cuenta la imagen y margen */
 }
 
-.contenido {
-  display: flex;
-  align-items: center; /* Alinea verticalmente el contenido */
-  background-color: #ffffff; /* Fondo blanco */
-  border: 20px solid #99C143; /* Borde verde */
-  border-radius: 12px; /* Borde redondeado */
-  padding: 20px;
-  margin-top: 20px;
-  box-sizing: border-box; /* Incluye el borde en el cálculo del tamaño */
-  text-align: justify; /* Justifica el texto */
-}
-
-.contenido > div {
-  flex: 1; /* Ocupa el espacio disponible */
-}
-
-.contenido h2 {
-  margin-bottom: 10px; /* Espacio inferior para los títulos */
-color: #01305A;
-text-align: center;
-}
-
-.contenido p {
-  margin: 0; /* Elimina el margen predeterminado */
-  line-height: 1.6; /* Altura de línea */
-  text-align: justify; /* Justifica el texto */
+.nosotros, .h21, .h22{
+  color: #01305A;
+  margin: 10px 0;
   text-align: center;
 }
 
-.contenido img {
-  max-width: 100%; /* Ancho máximo de la imagen */
-  margin-left: 20px; /* Margen izquierdo */
+.nosotros {
+  font-size: 36px;
 }
 
-.img1 {
-  max-width: 100%; /* Ancho máximo de la imagen de Misión */
-  margin-top: 20px; /* Espacio superior entre Misión y Visión */
+.subtitulo {
+  display: flex;
+  flex-direction: column; /* Apila los subtítulos verticalmente */
+  align-items: center; /* Centra los subtítulos horizontalmente */
 }
 
-.img2 {
+.h21, .h22 {
+  font-size: 30px;
+  margin: 0 10px;
+  white-space: nowrap;
+}
 
-  height: 400px;
-  width: 400px; /* Ancho de la imagen de Visión */
-  margin-top: 20px; /* Espacio superior entre Misión y Visión */
-  align-self: flex-end; /* Alineación a la derecha */
-  left: 20px;
+.parrafo {
+  font-size: 26px;
+  text-align: justify;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+  .contenedor1 {
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+  }
+
+  .doctora {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      margin-bottom: 20px;
+  }
+
+  .texto {
+      align-items: center;
+      width: 100%;
+  }
+
+  .parrafo {
+      width: 90%;
+      font-size: 22px;
+  }
+
+  .subtitulo {
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
-  .doctora {
-      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+  .contenedor1 {
+      width: 100%;
+      padding: 10px;
   }
 
-  .doctora img {
-      margin: auto; /* Centra la imagen en pantallas pequeñas */
+  .parrafo {
+      width: 100%;
+      font-size: 20px;
   }
 
-  .mision-vision {
-      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+  .subtitulo {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .nosotros, .h21, .h22 {
+      font-size: 25px;
+      text-align: center;
   }
 
-  .contenido img {
-      margin-top: 20px; /* Espacio superior adicional entre imágenes en pantallas pequeñas */
-      margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+  .parrafo {
+      font-size: 18px;
+  }
+}
+
+
+/*mision y vision */
+/* Contenedor principal con borde verde */
+.contenedor2 {
+  background-color: white;
+  width: 1200px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 5px solid green; /* Borde verde */
+  border-radius: 20px;
+  box-sizing: border-box;
+  position: relative;
+  top: 20px;
+  left: 0vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor de Misión */
+.mision {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Contenedor de Visión */
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.h1, .h2 {
+  font-size: 36px;
+  color: #01305A;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.parrafom, .parrafov {
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin: 10px 0;
+  width: 70%;
+}
+.h1{
+  position: relative;
+  top: -12vw;
+  left: 18vw;
+
+}
+.h2{
+  position: relative;
+  left: -19vw;
+}
+
+.parrafom{
+  position: relative;
+
+  width: 500px;
+  top: 3vw;
+  left: -13vw;
+}
+
+.parrafov{
+  position: relative;
+  left: -18vw;
+
+  width: 550px;
+}
+
+.perronegro {
+  width: 300px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.perro2 {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  bottom: 0px; /* Ajusta según sea necesario */
+  right: 0px;  /* Ajusta según sea necesario */
+   /* Opcional: rotación para efecto saliendo */
+
+
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1200px) {
+  .contenedor2 {
+    position: relative;
+      width: 95%;
+      left: 0vw;
+  }
+
+
+  .mision {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .perronegro {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 90%;
+  }
+
+  .parrafom, .parrafov {
+      width: 90%;
+  }
+  .parrafom{
+    position: relative;
+    left: 0;
+  }
+  .h1{
+    position: relative;
+    left: 0;
+    top: 6vw;
+
+  }
+
+  .parrafov{
+    position: relative;
+    left: 0vw;
+  }
+  .h2{
+    position: relative;
+    left: 0;
+  }
+
+  .perro2 {
+    position: relative;
+      bottom: -2vw;
+      right: -60vw;
+      width: 180px
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor2 {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .h1, .h2 {
+      font-size: 30px;
+  }
+
+  .parrafom, .parrafov {
+      font-size: 20px;
+  }
+
+  .perronegro {
+      width: 100%;
+  }
+
+  .perro2 {
+      width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1, .h2 {
+      font-size: 25px;
+  }
+
+  .parrafom, .parrafov {
+      font-size: 18px;
+  }
+
+  .perronegro {
+      width: 100%;
+  }
+
+  .perro2 {
+      width: 80px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .mision, .vision {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .perronegro, .perro2 {
+      float: none;
+      margin: 0 auto;
+      display: block;
+  }
+}
+
+/* Teléfonos (hasta 740px) */
+@media (max-width: 1024px) {
+  .h1, .h2 {
+      font-size: 40px;
+
+  }
+  .h21, .h22{
+    font-size: 20px;
+  }
+
+  .parrafom, .parrafov {
+      font-size: 20px;
+  }
+
+  .perronegro, .perro2 {
+      width: 100%;
+      margin: 20px auto;
+      float: none;
+  }
+
+  .perro2{
+    position: relative;
+    left: 188vw;
+    top: 4vw;
+    width: 250px;
+  }
+}
+@media (max-width:844px) {
+  .perro2{
+    position: relative;
+    left: 64px;
+  }
+  
+}
+
+
+
+
+/*piE dE pagina */
+
+.pie-de-pagina {
+  position: relative;
+  background-color: #01305A;
+  top: 30px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.seccion-pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  flex: 1;
+}
+
+.contenedor-iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
+}
+
+.item-icono {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.item-icono a:first-child {
+  margin-right: 10px;
+}
+
+.item-icono img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.item-icono a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: white; /* Asegurar color adecuado */
+}
+
+.redes-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -70px; /* Ajuste de margen a la izquierda */
+}
+
+.redes-pie a {
+  margin: 0 10px;
+}
+
+.redes-pie img {
+  width: 40px;
+  height: 40px;
+}
+
+.mapa-pie {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden; /* Para asegurar que el mapa no desborde en pantallas pequeñas */
+  position: relative;
+  
+}
+
+.mapa-pie iframe {
+  width: 700px; /* Ancho del mapa */
+  height: 300px; /* Alto del mapa */
+  border: 0;
+  transform: translateX(-50%); /* Centrar el mapa horizontalmente */
+  position: relative;
+  left: 50%;
+
+  
+  
+}
+
+@media (max-width: 768px) {
+  .pie-de-pagina {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .seccion-pie {
+      width: 100%;
+      align-items: center; /* Centrar elementos en pantallas pequeñas */
+      text-align: center; /* Alinear texto al centro en pantallas pequeñas */
+  }
+
+  .contenedor-iconos,
+  .redes-pie {
+      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+  }
+
+  .item-icono img,
+  .redes-pie img {
+      width: 30px;
+      height: 30px;
+  }
+
+  .item-icono a {
+      font-size: 16px;
+  }
+
+  .mapa-pie iframe {
+      width: 100%; /* Ancho completo en pantallas pequeñas */
+      height: 300px;
+      transform: none; /* Eliminar la transformación para centrado en pantallas pequeñas */
+      left: auto;
   }
 }
