@@ -294,13 +294,13 @@ nav {
 }
 .h1{
   position: relative;
-  top: -10vw;
-  left: 18vw;
+  top: -6vw;
+  left: 15vw;
 
 }
 .h2{
   position: relative;
-  left: -19vw;
+  left: -12vw;
 }
 
 .parrafom{
@@ -308,12 +308,12 @@ nav {
 
   width: 500px;
   top: 3vw;
-  left: -13vw;
+  left: -7vw;
 }
 
 .parrafov{
   position: relative;
-  left: -18vw;
+  left: -11vw;
 
   width: 550px;
 }
@@ -352,7 +352,7 @@ nav {
   .perronegro {
       margin-left: 0;
       margin-top: 20px;
-      width: 90%;
+      width: 80%;
   }
 
   .parrafom, .parrafov {
@@ -380,8 +380,8 @@ nav {
 
   .perro2 {
     position: relative;
-      bottom: -2vw;
-      right: -60vw;
+      bottom: -1vw;
+      right: -50vw;
       width: 180px
   }
 }
@@ -406,7 +406,8 @@ nav {
 
   .perro2 {
       width: 100px;
-  }
+
+}
 }
 
 @media (max-width: 480px) {

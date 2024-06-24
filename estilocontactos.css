@@ -161,7 +161,7 @@ top: 36px;
 .contacto-telefonos {
     position: relative;
     left: 20vw;
-    top: -122px;
+    top: -100px;
     padding: 10px; /* Ajusta el espacio interno */
     /* Reducido el grosor del borde */
     display: inline-block; /* Para que el contenedor se ajuste al contenido */
@@ -279,6 +279,8 @@ top: 36px;
         margin-top: 0; /* Reinicia el margen superior del párrafo */
         right: 120px;
         position: relative;
+        font-size: 20px;
+   
     }
 
     .contacto-telefonos{
@@ -312,8 +314,43 @@ top: 36px;
 @media(max-width: 882px){
 .texto1{
     position: relative;
-    left: -29vw;
+    left: -10vw;
+  
 }
+.contacto-telefonos , .h1{
+
+    margin-right: -10px;
+    margin-top: -20px;
+    left: 380px;
+    top: -65px;
+}
+
+.Carrera{
+    position: relative;
+    left: 1px;
+}
+.contacto-horario{
+
+    position: relative;
+    left: 30px;
+}
+.ser{
+    position: relative;
+    left: 40px;
+}
+
+}
+
+@media(max-width:667px){
+     .contacto-horario{
+        position: relative;
+        left: 45px;
+
+     }
+     .contacto-telefonos{
+        position: relative;
+        top: -60px;
+     }
 }
 
 
