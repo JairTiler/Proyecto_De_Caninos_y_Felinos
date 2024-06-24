@@ -161,7 +161,7 @@ top: 36px;
 .contacto-telefonos {
     position: relative;
     left: 20vw;
-    top: -8vw;
+    top: -122px;
     padding: 10px; /* Ajusta el espacio interno */
     /* Reducido el grosor del borde */
     display: inline-block; /* Para que el contenedor se ajuste al contenido */
@@ -307,6 +307,13 @@ top: 36px;
         position: relative;
         left: 2vw;
     }
+}
+
+@media(max-width: 882px){
+.texto1{
+    position: relative;
+    left: -29vw;
+}
 }
 
 
