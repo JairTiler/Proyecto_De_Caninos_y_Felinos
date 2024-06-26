@@ -289,13 +289,13 @@ nav {
 
 .h1 {
   position: relative;
-  top: -10vw;
-  left: 20vw;
+  top: -6vw;
+  left: 13vw;
 }
 
 .h2 {
   position: relative;
-  left: -18vw;
+  left: -14vw;
 }
 
 .parrafom {
@@ -307,7 +307,7 @@ nav {
 
 .parrafov {
   position: relative;
-  left: -15vw;
+  left: -12vw;
   width: 550px;
 }
 
