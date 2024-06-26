@@ -242,35 +242,29 @@ nav {
 
 
 /*mision y vision */
-/* Contenedor principal con borde verde */
 .contenedor2 {
   background-color: white;
-  width: 1200px;
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   margin: 30px auto;
   padding: 20px;
   border: 5px solid green; /* Borde verde */
   border-radius: 20px;
   box-sizing: border-box;
-  position: relative;
-  top: 20px;
-  left: 0vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
-/* Contenedor de Misión */
 .mision {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
-  position: relative;
 }
 
-/* Contenedor de Visión */
 .vision {
   display: flex;
   flex-direction: column;
@@ -292,34 +286,33 @@ nav {
   margin: 10px 0;
   width: 70%;
 }
-.h1{
-  position: relative;
-  top: -6vw;
-  left: 15vw;
 
-}
-.h2{
+.h1 {
   position: relative;
-  left: -12vw;
+  top: -10vw;
+  left: 20vw;
 }
 
-.parrafom{
+.h2 {
   position: relative;
+  left: -18vw;
+}
 
+.parrafom {
+  position: relative;
   width: 500px;
   top: 3vw;
-  left: -7vw;
+  left: -6vw;
 }
 
-.parrafov{
+.parrafov {
   position: relative;
-  left: -11vw;
-
+  left: -15vw;
   width: 550px;
 }
 
 .perronegro {
-  width: 300px;
+  width: 400px;
   height: auto;
   margin-left: 20px;
 }
@@ -328,154 +321,140 @@ nav {
   position: absolute;
   width: 500px;
   height: auto;
-  bottom: 0px; /* Ajusta según sea necesario */
-  right: 0px;  /* Ajusta según sea necesario */
-   /* Opcional: rotación para efecto saliendo */
-
-
+  bottom: 0;
+  right: 0;
 }
 
 /* Media Queries para hacer el diseño responsivo */
 @media (max-width: 1200px) {
   .contenedor2 {
-    position: relative;
-      width: 95%;
-      left: 0vw;
+    width: 95%;
+  
   }
 
-
   .mision {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .perronegro {
-      margin-left: 0;
-      margin-top: 20px;
-      width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
   }
 
   .parrafom, .parrafov {
-      width: 90%;
+    width: 90%;
+  }
+
+  .h1 {
+    left: 0;
+    top: 6vw;
   }
   .parrafom{
     position: relative;
-    left: 0;
-  }
-  .h1{
-    position: relative;
-    left: 0;
-    top: 6vw;
-
+    left: 7px;
   }
 
-  .parrafov{
-    position: relative;
-    left: 0vw;
-  }
-  .h2{
-    position: relative;
+  .h2, .parrafov {
     left: 0;
   }
 
   .perro2 {
     position: relative;
-      bottom: -1vw;
-      right: -50vw;
-      width: 180px
+
+    width: 80%;
+    left: auto;
+    left: 140px;
+  }
+  .nosotros,.h21,.h22{
+    font-size: 20px;
   }
 }
 
 @media (max-width: 768px) {
   .contenedor2 {
-      width: 100%;
-      padding: 10px;
+    padding: 10px;
   }
 
   .h1, .h2 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .parrafom, .parrafov {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .perronegro {
-      width: 100%;
+    width: 100%;
   }
 
   .perro2 {
-      width: 100px;
-
-}
+    width: 100px;
+ 
+  }
 }
 
 @media (max-width: 480px) {
   .h1, .h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .parrafom, .parrafov {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .perronegro {
-      width: 100%;
+    width: 100%;
   }
 
   .perro2 {
-      width: 80px;
+    width: 80px;   
   }
 }
 
-/* Tablet (768px - 991px) */
 @media (max-width: 991px) {
   .mision, .vision {
-      width: 100%;
-      margin-right: 0;
+    width: 100%;
   }
 
   .perronegro, .perro2 {
-      float: none;
-      margin: 0 auto;
-      display: block;
+    width: 100%;
+    margin: 20px auto;
   }
 }
 
-/* Teléfonos (hasta 740px) */
 @media (max-width: 1024px) {
   .h1, .h2 {
-      font-size: 40px;
-
-  }
-  .h21, .h22{
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .parrafom, .parrafov {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .perronegro, .perro2 {
-      width: 100%;
-      margin: 20px auto;
-      float: none;
+    width: 100%;
+    margin: 20px auto;
   }
 
-  .perro2{
+  .perro2 {
     position: relative;
-    left: 188vw;
-    top: 4vw;
-    width: 250px;
-  }
-}
-@media (max-width:844px) {
-  .perro2{
-    position: relative;
-    left: 64px;
-  }
   
+    top: 30px;
+    max-width: 280px;
+    margin-left: 60px;
+  }
 }
+
+@media (max-width: 600px) {
+  .perro2 {
+
+    width: 240px;
+    top: 30px;
+  }
+}
+
 
 
 
